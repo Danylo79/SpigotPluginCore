@@ -1,17 +1,16 @@
 package dev.dankom.spigotplugincore;
 
-import org.bukkit.plugin.java.JavaPlugin;
-
-public final class Main extends JavaPlugin {
-
+public final class Main extends SpigotPlugin {
     @Override
     public void onEnable() {
-        // Plugin startup logic
+        saveDefaultConfig();
 
+        setup(this, "&b[&aSpigotPluginCore&b]", "SpigotPluginCore");
+        log(true, "&aEnabling Spigot Plugin Core!");
     }
 
     @Override
     public void onDisable() {
-        // Plugin shutdown logic
+        log(true, "&cDisabling Spigot Plugin Core!");
     }
 }
