@@ -12,4 +12,8 @@ public class ChatUtil {
             return ChatColor.translateAlternateColorCodes('&', message);
         }
     }
+
+    public static void sendMessage(Player player, String message) {
+        player.sendMessage(translate(player, message));
+    }
 }
