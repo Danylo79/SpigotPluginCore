@@ -1,4 +1,8 @@
 name: SpigotPluginCore
 version: ${project.version}
 main: dev.dankom.spigotplugincore.Main
-api-version: 1.15
+api-version: 1.13
+softdepend:
+  - PlaceholderAPI
+  - Vault
+  - HeadDatabase
